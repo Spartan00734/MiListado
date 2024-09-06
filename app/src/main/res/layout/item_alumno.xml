@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/ivAlumno"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvAlumnoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Pedro"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivAlumno"/>
+
+    <TextView
+        android:id="@+id/tvAlumnoCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="20194989"
+        app:layout_constraintTop_toBottomOf="@id/tvAlumnoName"
+        app:layout_constraintStart_toEndOf="@+id/ivAlumno"/>
+
+    <TextView
+        android:id="@+id/tvAlumnoCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="ppalomino@ucol.mx"
+        app:layout_constraintTop_toBottomOf="@id/tvAlumnoCuenta"
+        app:layout_constraintStart_toEndOf="@+id/ivAlumno"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
